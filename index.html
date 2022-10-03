@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solitario - Alejandro</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="titulo">
+
+        <h2>Puntuacion: <small>0</p></h2>
+        <h2>Tiempo: <small>0:00</p></h2>
+    </header>
+    <main>
+        <div class="row">
+            <div class="col-4" id="barajas">
+                <div class="row">
+                    <div class="col-2">
+                        <img class="carta" id="sacandoCartas" src="cartas/grey_back.png" draggable="true" ondragstart="drag(event)">
+                    </div>
+                    <div class="col-8" id="cogerCartas">
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" id="colocarCartas">
+                <div id="ColocarCarta" class="col-2-5 colocandoCartas" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                </div>
+                <div id="ColocarCarta" class="col-2-5 colocandoCartas" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                </div>
+                <div id="ColocarCarta" class="col-2-5 colocandoCartas" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                </div>
+                <div id="ColocarCarta" class="col-2-5 colocandoCartas" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 espacio">
+            </div>
+            <div class="col-1 cogiendoCartas" id="columna-1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                
+            </div>
+            <div class="col-1 cogiendoCartas" id="columna-2" onload="repartiendoCartas(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+                
+            </div>
+            <div class="col-1 cogiendoCartas" id="columna-3" onload="repartiendoCartas(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+                
+            </div>
+            <div class="col-1 cogiendoCartas" id="columna-4" onload="repartiendoCartas(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+                
+            </div>
+            <div class="col-1 cogiendoCartas" id="columna-5" onload="repartiendoCartas(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+                
+            </div>
+            <div class="col-1 cogiendoCartas" id="columna-6" onload="repartiendoCartas(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+                
+            </div>
+            <div class="col-1 cogiendoCartas" id="columna-7" onload="repartiendoCartas(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+                
+            </div>
+            <div class="col-1 espacio"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="row">
+            <div id="divBotones" class="col-10 text-center">
+                <button id="btnNuevo" class="btn btn-primary">Nuevo Juego</button>
+                <button id="btnDeshacer" class="btn btn-primary">Deshacer</button>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/underscore-umd-min.js"></script>
+    <script src="./js/juego.js"></script>
+</body>
+</html>
