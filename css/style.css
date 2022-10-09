@@ -72,19 +72,10 @@ body{
     font-size: 10px;
 }
 
-#sacandoCartas{
-    position: relative;
-    top: 30px;
-    left: 100px;
-    height: 150px;
-    margin-left: -75px;
-    border: 5px solid red;
-    border-radius: 10%;
-}
 .escogerCarta{
     position: relative;
-    top: 40px;
-    left: 80px;
+    top: 35px;
+    left: 125px;
     width: 100px;
     margin-right: -50px;
 }
@@ -95,7 +86,9 @@ body{
 }
 
 .colocandoCartas{
-    float:right;
+    position: relative;
+    left: 10em;
+    float:left;
     width:100px;
     height: 155px;
     margin-right: 10px;
@@ -105,21 +98,24 @@ body{
 .cogiendoCartas{
     position: relative;
     top:20px;
-    float: center;
     width:100px;
     height: 155px;
-    margin: 15px 2px;
+    margin-top: 6%;
+    margin-right: 10px;
 }
 
 .espacio{
     margin:1px 10px;
 }
 footer{
+    display: block;
+    position: relative;
+    top: 7em;
     width: 100%;
     height: 100%;
-    padding: 3px;
     background-color: darksalmon;
     color: white;
+    text-align: center;
 }
 
 .hide {
